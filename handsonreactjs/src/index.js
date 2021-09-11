@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import HomeController from './pages/Home/HomeController';
+// import HomeController from './pages/Home/HomeController';
+import LoginController from './pages/Login/LoginController';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,7 +15,7 @@ import { Provider } from 'react-redux';
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <HomeController />
+      <LoginController />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

@@ -3,7 +3,7 @@
  */
 //Importa os effects do Redux-Saga 
 import { takeLatest, call, put, all } from 'redux-saga/effects';
-import api from '../../../Services/api';
+import api from '../../../services/api';
 import qs from 'qs';
 
 // Importa as funções Actions que serão chamadas pelo Saga
