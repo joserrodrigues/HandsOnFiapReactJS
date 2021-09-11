@@ -71,6 +71,7 @@ const LoginView = (props) => {
                                         <Col md={12} className='buttonInfo'>
                                             <Button
                                                 type="submit"
+                                                data-testid="button"
                                                 className={!(dirty && isValid) ? "disabled-btn" : ""}
                                                 disabled={!(dirty && isValid)}
                                             >
