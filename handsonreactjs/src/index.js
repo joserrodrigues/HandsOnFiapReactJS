@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './pages/Home/HomeController';
+import HomeController from './pages/Home/HomeController';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+//Importa o store
+import store from './store/store';
+
+//Importa o Provider do React Redux
+import { Provider } from 'react-redux';
+
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Provider store={store}>
+      <HomeController />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
